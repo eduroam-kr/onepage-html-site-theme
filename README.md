@@ -33,7 +33,7 @@
 | `예제연구소`, `Example Research Institute` | 기관명 (국문, 영문) |
 | `example.re.kr` | RADIUS realm (`아이디@realm`, `anonymous@realm`) |
 | `rad.eduroam.example.re.kr` | RADIUS 서버 인증서의 CN (DNS 등록 불필요, 아래 참고) |
-| `eduroam-kr.github.io/site-template` | 이 사이트 주소 (`canonical`, `og:url`, `hreflang`) |
+| `eduroam-kr.github.io/site-template` | 이 사이트 주소 (`canonical`, `og:url`, `og:image`, `hreflang`) |
 | `정보통신팀`, `IT Team`, `helpdesk@example.re.kr`, `042-000-0000`, `+82-42-000-0000` | 문의처 |
 | 인증서 CN, 유효기간, SHA-256 | `assets/certs/`의 파일과 일치시킴. `short.html`에도 같은 값이 들어갑니다 |
 | `index.html`의 `3.1. 원내 이용장소` 표 | 기관 건물·구역별 설치 현황 |
@@ -161,7 +161,8 @@ DNS 전파 후 GitHub가 인증서를 발급하면 **Settings → Pages**에서 
 | `CNAME` | GitHub Pages 사용자 도메인 (GitHub Pages 배포시 생성) |
 | `.nojekyll` | GitHub Pages의 Jekyll 처리를 끔 (지우지 마세요) |
 | `assets/icons/` | 파비콘 |
-| `assets/images/eduroam-logo.svg` | eduroam 로고 |
+| `assets/images/eduroam-logo.svg` | eduroam 로고 (머리글) |
+| `assets/images/og-image.png` | 카카오톡·트위터·페이스북 등에 링크를 붙였을 때 뜨는 그림 (1200×630) |
 | `assets/images/logo.png` | 기관 로고 (교체 대상) |
 | `assets/certs/` | 기관 CA·RADIUS 서버 인증서 (예제 파일이 들어 있음) |
 | `CLAUDE.md` | AI 유지보수 가이드 |

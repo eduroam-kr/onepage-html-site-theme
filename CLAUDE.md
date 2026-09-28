@@ -9,7 +9,8 @@
   - 섹션 구성과 앵커(`#intro`, `#howto`, `#visitor`, `#member`, `#area`, `#policy`)는 두 페이지가 동일합니다.
   - 인증서 지문 표는 두 페이지에 모두 둡니다. 값이 갈라지지 않도록 `assets/certs/`의 파일에서 읽어 고칩니다.
 - `short.html`: 기존 웹사이트 본문에 붙여 넣는 조각. `BEGIN/END eduroam-KR short` 사이가 실제 배포 대상. 여기에는 Bootstrap을 쓰지 않습니다 — 붙여 넣는 쪽 사이트의 CSS와 충돌하면 안 되기 때문입니다.
-- `assets/`: 아이콘, eduroam 로고(`eduroam-logo.svg`), 기관 로고(`logo.png`), 인증서.
+- `assets/`: 아이콘, eduroam 로고(`eduroam-logo.svg`), 기관 로고(`logo.png`), 공유 카드 그림(`og-image.png`), 인증서.
+  - `og-image.png`는 `eduroam-logo.svg`를 흰 바탕 1200×630 가운데에 600px 폭으로 놓고 2배로 렌더한 뒤 줄인 것입니다. 링크 미리보기는 배경이 어두운 앱이 많아 투명 배경을 쓰지 않습니다. 정사각으로 잘려도 로고가 안 잘리도록 폭을 절반으로 둡니다.
 - 기관이 바꿀 값의 목록은 `README.md`의 '수정할 값'에 있습니다. 값을 추가하거나 옮기면 README 표도 함께 고칩니다.
 
 ## 표기 규칙
