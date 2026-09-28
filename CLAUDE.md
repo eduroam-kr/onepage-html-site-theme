@@ -30,6 +30,7 @@
 `BEGIN eduroam-KR notice` ~ `END eduroam-KR notice` 사이 문단은 NRO가 정한 공통 문구입니다. `index.html`에 국문, `en/index.html`에 영문(`notice (en)`), `short.html`에 국문이 하나씩 있습니다.
 
 - 문장, 링크 URL, 링크 순서를 바꾸지 않습니다. 요약·번역·줄바꿈 편집도 하지 않습니다.
+- 문단 첫 줄의 제목(`대한민국 eduroam 서비스 및 상표 고지`, 영문 `eduroam Korea service and trademark notice`)도 문구의 일부입니다. 지우거나 바꾸지 않습니다. ©는 저작권 표시라 여기에 쓰지 않습니다 — 이 문단은 저작권 고지가 아니라 참여 사실과 상표권에 대한 고지입니다.
 - 바꿔도 되는 것은 두 가지뿐입니다: 기관명, 기관명 뒤 조사(`은`/`는`). NRO(KISTI KREONET)와 RO(KREN)는 문구에 포함되어 있으므로 지우지 않습니다.
 - 링크에 `rel="nofollow"`, `rel="sponsored"`, `rel="ugc"`를 붙이지 않습니다.
 - 가시성 기준을 지킵니다:
@@ -58,8 +59,8 @@ grep -n -i 'eduroam' index.html en/index.html short.html README.md | grep -E 'Ed
 grep -n 'href="http://' index.html en/index.html short.html
 
 # 권리 고지 문구가 index.html 과 short.html 에서 같은지 (국문)
-diff <(sed -n '/BEGIN eduroam-KR notice:/,/END eduroam-KR notice -->/p' index.html | sed 's/^ *//') \
-     <(sed -n '/BEGIN eduroam-KR notice:/,/END eduroam-KR notice -->/p' short.html | sed 's/^ *//')
+notice() { sed -n "/BEGIN eduroam-KR notice/,/END eduroam-KR notice/p" "$1" | sed -e 's/<[^>]*>//g' -e 's/^ *//' -e '/^$/d'; }
+diff <(notice index.html) <(notice short.html)
 
 # 표시된 인증서 값이 실제 파일과 맞는지
 for f in assets/certs/ca.pem.crt assets/certs/server.pem; do
