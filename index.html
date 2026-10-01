@@ -76,7 +76,12 @@
       --bs-table-striped-bg: rgba(255, 255, 255, 0.04);
     }
     [data-bs-theme="dark"] .navbar { --bs-navbar-color: rgba(230, 237, 245, 0.75); --bs-navbar-hover-color: #8cc4ff; --bs-navbar-brand-color: #e6edf5; --bs-navbar-active-color: #e6edf5; }
-    [data-bs-theme="dark"] .brand-logo, [data-bs-theme="dark"] .brand-logo-inst { filter: invert(1) hue-rotate(180deg) brightness(1.2); }
+    /* 기관 로고는 제각각이라 뒤집는 수밖에 없다. eduroam 로고는 상표라 색을 뒤집지
+       않고 흰 로고 파일을 따로 두고 바꿔 끼운다. */
+    [data-bs-theme="dark"] .brand-logo-inst { filter: invert(1) hue-rotate(180deg) brightness(1.2); }
+    .brand-logo-dark { display: none; }
+    [data-bs-theme="dark"] .brand-logo-light { display: none; }
+    [data-bs-theme="dark"] .brand-logo-dark { display: inline-block; }
     [data-bs-theme="light"] { color-scheme: light; }
 
     body {
@@ -167,7 +172,8 @@
 <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
   <div class="container wrap">
     <a class="navbar-brand d-flex align-items-center gap-2 py-1" href="./">
-      <img class="brand-logo" src="assets/images/eduroam-logo.svg" alt="eduroam" width="90" height="35">
+      <img class="brand-logo brand-logo-light" src="assets/images/eduroam-logo.svg" alt="eduroam" width="90" height="35">
+      <img class="brand-logo brand-logo-dark" src="assets/images/eduroam-logo-white.svg" alt="eduroam" width="90" height="35">
       <span class="brand-sep" aria-hidden="true"></span>
       <img class="brand-logo-inst" src="assets/images/logo.png" alt="예제연구소" width="1092" height="320">
     </a>
