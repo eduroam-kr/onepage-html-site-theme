@@ -33,8 +33,8 @@
 `BEGIN eduroam-KR notice` ~ `END eduroam-KR notice` 사이 문단은 NRO가 정한 공통 문구입니다. `index.html`에 국문, `en/index.html`에 영문(`notice (en)`), `short.html`에 국문이 하나씩 있습니다.
 
 - 문장, 링크 URL, 링크 순서를 바꾸지 않습니다. 요약·번역·줄바꿈 편집도 하지 않습니다.
-- 문단 첫 줄의 제목(`대한민국 eduroam 서비스 및 상표 고지`, 영문 `eduroam Korea service and trademark notice`)도 문구의 일부입니다. 지우거나 바꾸지 않습니다. ©는 저작권 표시라 여기에 쓰지 않습니다 — 이 문단은 저작권 고지가 아니라 참여 사실과 상표권에 대한 고지입니다.
-- 바꿔도 되는 것은 두 가지뿐입니다: 기관명, 기관명 뒤 조사(`은`/`는`). NRO(KISTI KREONET)와 RO(KREN)는 문구에 포함되어 있으므로 지우지 않습니다.
+- 문단 첫 줄의 제목(`대한민국 eduroam 서비스 및 상표 고지`, 영문 `eduroam Korea service and trademark notice`)도 문구의 일부입니다. 지우거나 바꾸지 않습니다. ©는 저작권 표시라 여기에 쓰지 않습니다 — 이 문단은 저작권 고지가 아니라 서비스 운영 주체와 상표권에 대한 고지입니다.
+- 바꿀 것이 없습니다. 기관명도 들어가지 않습니다 — 이 문단은 대한민국 eduroam 서비스와 상표에 대한 NRO의 고지이지 기관 소개가 아닙니다. 기관이 참여기관임을 밝히는 문장은 본문에 따로 둡니다.
 - 링크에 `rel="nofollow"`, `rel="sponsored"`, `rel="ugc"`를 붙이지 않습니다.
 - 가시성 기준을 지킵니다:
   - 글자 크기 14px(0.875rem) 이상 (현재 `.edurkr-notice`는 0.9375rem)

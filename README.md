@@ -105,13 +105,14 @@ sha1 Fingerprint=A8:26:01:64:C6:90:EE:00:16:C4:EE:7C:10:2F:2C:1E:46:82:E3:42
 
 ## 4. 권리 고지 문구
 
-두 파일 하단의 `BEGIN eduroam-KR notice` ~ `END eduroam-KR notice` 사이 문구는 대한민국 eduroam 참여기관 공통 문구입니다. `index.html`에 국문, `en/index.html`에 영문이 하나씩 있습니다. 문구와 링크는 수정하지 않고, 다음 두 가지만 바꿉니다.
+각 파일 하단의 `BEGIN eduroam-KR notice` ~ `END eduroam-KR notice` 사이 문구는 NRO가 정한 공통 문구입니다. `index.html`에 국문, `en/index.html`에 영문, `short.html`에 국문이 하나씩 있습니다.
 
-1. 기관명
-2. 기관명 뒤 조사를 기관명에 맞게 `은` 또는 `는`으로
+**한 글자도 바꾸지 않습니다.** 기관명도 들어가지 않습니다. 문장, 링크 URL, 링크 순서, 첫 줄 제목까지 그대로 둡니다.
 
-글자 크기(14px 이상)와 색 대비를 줄이거나 문구를 숨기면 안 됩니다.
-
+- 글자 크기 14px(0.875rem) 이상, 배경 대비 4.5:1 이상, 링크 밑줄 유지
+- 숨기지 않습니다 — `display:none`, `visibility:hidden`, `opacity` 1 미만, 화면 밖 배치, `aria-hidden`, 접기·모달 안에 넣기 모두 안 됩니다
+- 이미지가 아닌 HTML 텍스트로, JavaScript로 나중에 넣지 않고 HTML 원문에 둡니다
+- 문구 자체를 고쳐야 하면 이 저장소가 아니라 NRO(<eduroam.kreonet.net>)에 요청합니다
 
 ## 5. 사용 방식
 
