@@ -1,5 +1,7 @@
 # eduroamKR 참여기관 서비스 안내 템플릿
 
+> **이 저장소는 fork 해서 쓰는 템플릿입니다.** Jekyll 테마가 아니라 HTML 을 직접 고치는 방식이라 빌드 도구가 필요 없습니다. `remote_theme:` 으로 끌어다 쓸 수 없습니다.
+
 참여기관의 eduroam 서비스 안내 사이트 템플릿입니다. 국문·영문 두 페이지로 된 단순한 웹사이트며, GitHub Pages를 통한 정적 호스팅이 가능합니다.
 
 순수 HTML/CSS로 되어 있어, GitHub Pages가 아닌 기관 웹서버에 파일을 그대로 올려도 동작합니다.
@@ -33,7 +35,7 @@
 | `예제연구소`, `Example Research Institute` | 기관명 (국문, 영문). 바닥글 **참여 선언** 문장에도 들어갑니다 |
 | `example.re.kr` | RADIUS realm (`아이디@realm`, `anonymous@realm`) |
 | `rad.eduroam.example.re.kr` | RADIUS 서버 인증서의 CN (DNS 등록 불필요, 아래 참고) |
-| `eduroam-kr.github.io/site-template` | 이 사이트 주소 (`canonical`, `og:url`, `og:image`, `hreflang`) |
+| `eduroam-kr.github.io/onepage-html-site-theme` | 이 사이트 주소 (`canonical`, `og:url`, `og:image`, `hreflang`) |
 | `정보통신팀`, `IT Team`, `helpdesk@example.re.kr`, `042-000-0000`, `+82-42-000-0000` | 문의처 |
 | 인증서 CN, 유효기간, SHA-256 | `assets/certs/`의 파일과 일치시킴. `short.html`에도 같은 값이 들어갑니다 |
 | `index.html`의 `3.1. 원내 이용장소` 표 | 기관 건물·구역별 설치 현황 |
