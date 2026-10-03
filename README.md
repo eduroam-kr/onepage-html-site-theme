@@ -30,7 +30,7 @@
 | 예제 값 | 설명 |
 |---------|------|
 | `assets/images/logo.png` | 기관 로고 (머리글에 eduroam 로고와 나란히 표시) |
-| `예제연구소`, `Example Research Institute` | 기관명 (국문, 영문) |
+| `예제연구소`, `Example Research Institute` | 기관명 (국문, 영문). 바닥글 **참여 선언** 문장에도 들어갑니다 |
 | `example.re.kr` | RADIUS realm (`아이디@realm`, `anonymous@realm`) |
 | `rad.eduroam.example.re.kr` | RADIUS 서버 인증서의 CN (DNS 등록 불필요, 아래 참고) |
 | `eduroam-kr.github.io/site-template` | 이 사이트 주소 (`canonical`, `og:url`, `og:image`, `hreflang`) |
@@ -103,11 +103,15 @@ sha1 Fingerprint=A8:26:01:64:C6:90:EE:00:16:C4:EE:7C:10:2F:2C:1E:46:82:E3:42
 ```
 
 
-## 4. 권리 고지 문구
+## 4. 참여 선언과 권리 고지 문구
 
-각 파일 하단의 `BEGIN eduroam-KR notice` ~ `END eduroam-KR notice` 사이 문구는 NRO가 정한 공통 문구입니다. `index.html`에 국문, `en/index.html`에 영문, `short.html`에 국문이 하나씩 있습니다.
+바닥글에 두 가지를 게시합니다. 둘 다 있어야 합니다.
 
-**한 글자도 바꾸지 않습니다.** 기관명도 들어가지 않습니다. 문장, 링크 URL, 링크 순서, 첫 줄 제목까지 그대로 둡니다.
+**① 참여 선언** — 기관명을 넣은 한 문장입니다. 기관이 대한민국 eduroam 참여기관임을 자기 이름으로 밝히는 자리라, 기관명과 조사(`는`/`은`)를 자기 기관에 맞게 고칩니다.
+
+**② 권리 고지 문구** — `BEGIN eduroam-KR notice` ~ `END eduroam-KR notice` 사이는 NRO가 정한 공통 문구입니다. `index.html`에 국문, `en/index.html`에 영문, `short.html`에 국문이 하나씩 있습니다. **한 글자도 바꾸지 않습니다.** 기관명도 들어가지 않습니다 — 기관마다 글자가 달라지면 게시 여부를 대조할 수 없기 때문입니다.
+
+둘 다 다음 게시 요건을 지킵니다.
 
 - 글자 크기 14px(0.875rem) 이상, 배경 대비 4.5:1 이상, 링크 밑줄 유지
 - 숨기지 않습니다 — `display:none`, `visibility:hidden`, `opacity` 1 미만, 화면 밖 배치, `aria-hidden`, 접기·모달 안에 넣기 모두 안 됩니다
