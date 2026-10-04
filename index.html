@@ -90,6 +90,11 @@
       overflow-wrap: anywhere;
     }
 
+    /* 그림은 칸을 넘지 않는다. Bootstrap 은 .img-fluid 를 붙여야 이렇게 되는데,
+       기관이 본문에 그림을 넣을 때 클래스까지 챙기기는 어렵다. 요소 선택자라
+       아래에서 크기를 따로 정한 로고는 그쪽이 이긴다. */
+    img { max-width: 100%; }
+
     /* 본문 폭. 표가 많아 너무 넓으면 읽기 어렵다. */
     .wrap { max-width: 52rem; }
 
